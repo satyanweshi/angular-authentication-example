@@ -1,8 +1,4 @@
-﻿'use strict';
-
-// declare modules
-angular.module('Authentication', []);
-angular.module('Home', []);
+'use strict';
 
 angular.module('BasicHttpAuthExample', [
     'Authentication',
@@ -16,12 +12,12 @@ angular.module('BasicHttpAuthExample', [
     $routeProvider
         .when('/login', {
             controller: 'LoginController',
-            templateUrl: 'modules/authentication/views/login.html'
+            templateUrl: 'authentication/views/login.html'
         })
 
         .when('/', {
             controller: 'HomeController',
-            templateUrl: 'modules/home/views/home.html'
+            templateUrl: 'home/views/home.html'
         })
 
         .otherwise({ redirectTo: '/login' });
